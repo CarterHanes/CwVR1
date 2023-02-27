@@ -1835,7 +1835,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 32
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playAtStart: 0
-  videoMaterial: {fileID: 1614224754}
+  videoMaterial: {fileID: 1625199839}
   videoClips:
   - {fileID: 32900000, guid: c675fc381244840f4900887e1b0870d7, type: 3}
 --- !u!328 &375738643
@@ -2760,6 +2760,7 @@ GameObject:
   - component: {fileID: 712900739}
   - component: {fileID: 712900738}
   - component: {fileID: 712900742}
+  - component: {fileID: 712900743}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -3208,7 +3209,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_AllowHoveredActivate: 0
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
@@ -3240,6 +3241,19 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
+--- !u!135 &712900743
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712900736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05
+  m_Center: {x: -0.0000000037252903, y: -1.1176, z: 0.5000001}
 --- !u!1001 &735239293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5416,7 +5430,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 735239293}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1614224754
+--- !u!21 &1625199839
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
